@@ -26,6 +26,10 @@ export const Default = () => {
   return <Task task={{ ...taskData }} {...actionsData} />;
 };
 
+// export const Hover = () => {
+//     return <Task task={{ ...taskData}} {...actionsData} />;
+// }
+
 export const Completed = () => (
   <Task task={{ ...taskData, state: 'TASK_COMPLETED' }} {...actionsData} />
 );
