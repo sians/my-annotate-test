@@ -1,0 +1,33 @@
+.list-item {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    input {
+        font-family: 'PT Mono', ;
+        border: none;
+        background-color: transparent;
+        color: rgb(248, 88, 88);
+    }
+    .icon {
+        padding-right: 10px;
+        // color: rgb(209, 209, 209)
+        color: rgb(248, 88, 88);
+    }
+    &:hover {
+        background-color: rgb(255, 220, 220); 
+    }
+}
+.list-item.selected {
+    background-color: rgb(248, 88, 88);;
+    input {
+        color: rgb(255, 220, 220);
+    }
+    .icon {
+        color: rgb(255, 220, 220);
+    }
+}
+.list-item.completed {
+    input[type=text] {
+        text-decoration: line-through;
+    }
+}

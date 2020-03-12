@@ -1,15 +1,62 @@
-import React from 'react';
+import React, {useState} from 'react';
+import PropTypes from 'prop-types';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArchive } from '@fortawesome/free-solid-svg-icons'
+import { faArchive, faTrashAlt, faCheckCircle, faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 
-export default function Task({ task: { id, text, completed }, onArchiveTask, onCompleteTask }) {
-    const archive = <FontAwesomeIcon icon={faArchive} style={{opacity: 0.3}}/>
+export default function Task({ task: { id, text, selected, completed }, onUpdateTask, onDeleteTask }) {
+    const trashIcon = <FontAwesomeIcon className="icon" icon={faTrashAlt}/>
+    const checkIcon = <FontAwesomeIcon className="icon" icon={faCheckCircle}/>
+    const uncheckIcon = <FontAwesomeIcon className="icon" icon={faTimesCircle}/>
+
+    const [isHovering, setIsHovering] = useState(false);
+    const handleMouseHover = () => { 
+        setIsHovering(!isHovering)
+    }
+
+    const colourTheme = {light: "rgb(255, 220, 220)", dark: "rgb(248, 88, 88)"}
   
+    const itemComplete = completed ? "completed" : "";
+    const itemSelected = selected ? "selected" : ""
+
     return (
-    <div className={`list-item ${completed}`}>
+    <div className={`list-item ${itemComplete} ${itemSelected}`}
+            onMouseEnter={handleMouseHover}
+            onMouseLeave={handleMouseHover}>
+
         <input type="text" value={text} readOnly={true} placeholder="Input title"/>
-        {archive}
+
+        { (isHovering || selected) &&
+            <div className="actions" onClick={event => event.stopPropagation()}>
+                {!completed && (
+                    <a onClick={() => onUpdateTask(id)}>
+                        {checkIcon}        
+                    </a>
+                )}
+
+                {completed && (
+                    <a onClick={() => onUpdateTask(id)}>
+                        {uncheckIcon}
+                    </a>
+                )}            
+                
+                <a onClick={() => onDeleteTask(id)}>
+                    {trashIcon}
+                </a>
+            </div>
+        }
+
     </div>
   );
 }
+
+Task.propTypes = {
+    task: PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      text: PropTypes.string.isRequired,
+      selected: PropTypes.bool,
+      completed: PropTypes.bool.isRequired,
+    }),
+    onUpdateTask: PropTypes.func,
+    onDeleteTask: PropTypes.func,
+  };

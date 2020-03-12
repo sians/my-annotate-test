@@ -13,27 +13,34 @@ export default {
 export const taskData = {
   id: '1',
   title: 'Test Task',
-  state: 'TASK_INCOMPLETE',
+  selected: false,
+  completed: false,
+//   archived: 'TASK_ACTIVE',
   updatedAt: new Date(2018, 0, 1, 9, 0),
 };
 
 export const actionsData = {
-  onCompleteTask: action('onCompleteTask'),
-  onArchiveTask: action('onArchiveTask'),
+  onUpdateTask: action('onUpdateTask'),
+  onDeleteTask: action('onDeleteTask')
+//   onArchiveTask: action('onArchiveTask'),
 };
 
 export const Default = () => {
-  return <Task task={{ ...taskData }} {...actionsData} />;
+  return <Task task={{ ...taskData, text: 'some text' }} {...actionsData} />;
 };
 
-// export const Hover = () => {
-//     return <Task task={{ ...taskData}} {...actionsData} />;
-// }
-
 export const Completed = () => (
-  <Task task={{ ...taskData, state: 'TASK_COMPLETED' }} {...actionsData} />
+    <Task task={{ ...taskData, text: 'some text', completed: true }} {...actionsData} />
 );
 
-export const Archived = () => (
-  <Task task={{ ...taskData, state: 'TASK_ARCHIVED' }} {...actionsData} />
+export const SelectedIncomplete = () => {
+    return <Task task={{ ...taskData, text: 'some text', selected: true}} {...actionsData} />;
+};
+
+export const SelectedCompleted = () => (
+  <Task task={{ ...taskData, text: 'some text', selected: true, completed: true }} {...actionsData} />
 );
+
+// export const Archived = () => (
+//   <Task task={{ ...taskData, archived: 'TASK_ARCHIVED' }} {...actionsData} />
+// );
