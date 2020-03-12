@@ -1,12 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 
 import Task from '../Task/Task';
 
 function Panel({ loading, tasks, onUpdateTask, onDeleteTask }) {
+  const [selectedTask, setSelectedTask] = useState(null);
+
   const events = {
     onUpdateTask,
     onDeleteTask,
+    setSelectedTask,
   };
 
   if (loading) {
