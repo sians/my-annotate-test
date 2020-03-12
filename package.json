@@ -13,7 +13,9 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-image-annotate": "^0.1.39",
-    "react-scripts": "3.4.0"
+    "react-redux": "^7.2.0",
+    "react-scripts": "3.4.0",
+    "redux": "^4.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -43,6 +45,7 @@
     "@storybook/addon-links": "^5.3.14",
     "@storybook/addons": "^5.3.14",
     "@storybook/preset-create-react-app": "^2.0.0",
-    "@storybook/react": "^5.3.14"
+    "@storybook/react": "^5.3.14",
+    "redux-devtools": "^3.5.0"
   }
 }

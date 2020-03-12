@@ -1,11 +1,15 @@
 .list-item {
+    height: 20px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     input {
         font-family: 'PT Mono', ;
         border: none;
+        width: 90%;
         background-color: transparent;
+        outline: none;
         color: rgb(248, 88, 88);
     }
     .icon {
