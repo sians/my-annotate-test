@@ -15,14 +15,12 @@ export const taskData = {
   title: 'Test Task',
   selected: false,
   completed: false,
-//   archived: 'TASK_ACTIVE',
   updatedAt: new Date(2018, 0, 1, 9, 0),
 };
 
 export const actionsData = {
   onUpdateTask: action('onUpdateTask'),
   onDeleteTask: action('onDeleteTask')
-//   onArchiveTask: action('onArchiveTask'),
 };
 
 export const Default = () => {
@@ -34,13 +32,10 @@ export const Completed = () => (
 );
 
 export const SelectedIncomplete = () => {
-    return <Task task={{ ...taskData, text: 'some text', selected: true}} {...actionsData} />;
+    return <Task task={{ ...taskData, text: 'some text'}} {...actionsData} />;
 };
 
 export const SelectedCompleted = () => (
-  <Task task={{ ...taskData, text: 'some text', selected: true, completed: true }} {...actionsData} />
+  <Task task={{ ...taskData, text: 'some text', completed: true }} {...actionsData} />
 );
 
-// export const Archived = () => (
-//   <Task task={{ ...taskData, archived: 'TASK_ARCHIVED' }} {...actionsData} />
-// );
