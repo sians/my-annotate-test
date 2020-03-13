@@ -6,8 +6,8 @@
     padding: 10px 10px 40px;
     border: none;
     border-radius: 10px;
-    color: rgb(248, 88, 88);
-    background-color: rgba(255,255,255,0.6);
+    color: $primary;
+    background-color: $secondary;
     &:focus {
         // border: solid 3px blue;
         -webkit-box-shadow: 0px 4px 44px -21px rgba(219,79,79,1);

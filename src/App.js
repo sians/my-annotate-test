@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.scss';
 import screen from './test-screen.png';
 import counterstrikeImg from './counterstrike.png';
 import csgoTemplate from './csgo_template.json';
+
+import { Provider } from 'react-redux';
+import { store } from './store/redux';
+import Panel from './components/Panel'
 
 import ReactImageAnnotate from "react-image-annotate";
 
@@ -100,15 +104,25 @@ const onExit = (obj) => {
 
 
 const App = () => (
-  <ReactImageAnnotate
-    selectedImage={counterstrikeImg}
-    taskDescription="# Tag coffees."
-    enabledTools={["select", "create-box"]}
-    images={imagesList}
-    regionTagList={["text", "not-text"]}
-    regionClsList={clsList}
-    onExit={onExit}
-  />
+    <ReactImageAnnotate
+      selectedImage={counterstrikeImg}
+      taskDescription="# Tag coffees."
+      enabledTools={["select", "create-box"]}
+      images={imagesList}
+      regionTagList={["text", "not-text"]}
+      regionClsList={clsList}
+      onExit={onExit}
+    />
 )
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <Provider store={store}>
+//         <Panel />
+//       </Provider>
+//     )
+//   }
+// }
 
 export default App;

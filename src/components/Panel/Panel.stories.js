@@ -1,5 +1,6 @@
 import React from 'react';
 
+// import Panel from './Panel';
 import Panel from './Panel';
 import { taskData, actionsData } from '../Task/Task.stories';
 
@@ -19,15 +20,14 @@ export const defaultTasksData = [
   { ...taskData, id: '6', text: 'Task 6 biscuit', completed: false },
 ];
 
-// export const withPinnedTasksData = [
-//   ...defaultTasksData.slice(0, 5),
-//   { id: '6', title: 'Task 6 (pinned)', state: 'TASK_PINNED' },
-// ];
-
 export const Default = () => <Panel name="soon" tasks={defaultTasksData} {...actionsData} />;
-
-// export const WithPinnedTasks = () => <Panel tasks={withPinnedTasksData} {...actionsData} />;
 
 export const Loading = () => <Panel loading tasks={[]} {...actionsData} />;
 
 export const Empty = () => <Panel tasks={[]} {...actionsData} />;
+
+// export const Default = () => <Panel name="soon" tasks={defaultTasksData} {...actionsData} />;
+
+// export const Loading = () => <Panel loading tasks={[]} {...actionsData} />;
+
+// export const Empty = () => <Panel tasks={[]} {...actionsData} />;

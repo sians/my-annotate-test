@@ -1,6 +1,6 @@
 .icon-button {
-    background-color: rgba(248, 88, 88, 0.6);
-    color: rgb(255, 220, 220);
+    background-color: rgba($primary, 0.6);
+    color: $secondary;
     font-size: 12px;
     width: 35px;
     height: 35px;
@@ -9,11 +9,8 @@
     align-items: center;
     margin-left: 5px;
     border-radius: 50%;
-    -webkit-box-shadow: 10px 10px 47px -21px rgba(128,24,24,1);
-    -moz-box-shadow: 10px 10px 47px -21px rgba(128,24,24,1);
-    box-shadow: 10px 10px 47px -21px rgba(128,24,24,1);
     &:hover {
-        background-color: rgba(248, 88, 88, 1);
+        background-color: $primary;
+        // border: solid 10px rgba($primary, 0.5);
     }
-
 }
