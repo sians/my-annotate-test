@@ -7,15 +7,13 @@
     input {
         font-family: 'PT Mono', ;
         border: none;
-        width: 90%;
+        width: 85%;
         background-color: transparent;
         outline: none;
         color: rgb(248, 88, 88);
     }
-    .icon {
-        padding-right: 10px;
-        // color: rgb(209, 209, 209)
-        color: rgb(248, 88, 88);
+    .action-buttons {
+        display: flex;
     }
     &:hover {
         background-color: rgb(255, 220, 220); 
@@ -24,9 +22,6 @@
 .list-item.selected {
     background-color: rgb(248, 88, 88);;
     input {
-        color: rgb(255, 220, 220);
-    }
-    .icon {
         color: rgb(255, 220, 220);
     }
 }

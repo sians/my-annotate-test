@@ -2,9 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
 import screen from './test-screen.png';
+import counterstrikeImg from './counterstrike.png';
+import csgoTemplate from './csgo_template.json';
 
 import ReactImageAnnotate from "react-image-annotate";
- 
+
+// console.log(counterstrikeImg)
+// console.log(csgoTemplate)
 
 const clsList = [
   "avatar",
@@ -48,17 +52,47 @@ const regionsList = [
   }  
 ]
 
+const parseTemplate = (template) => {
+  const regionList = template.map(box => {
+    return {
+      id: box["class_name"],
+      tags: [""],
+      color: "hsl(60,100%,50%)",
+      cls: box["class_name"],
+      type: "box",
+      x: (box["start_x"] / 1200),
+      y: (box["start_y"] / 900),
+      w: ((box["end_x"] - box["start_x"]) / 1200),
+      h: ((box["end_y"] - box["start_y"]) / 900),
+    }
+  })
+  return regionList
+}
+
+const generateJson = (regions) => {
+  const json = regions.map(region => {
+    return {
+      "class_name": region["id"],
+      "start_x": Math.ceil(region["x"] * 1200),
+      "end_x": Math.ceil((region["x"] + region["w"]) * 1200),
+      "start_y": Math.ceil(region["y"] * 900),
+      "end_y": Math.ceil((region["y"] + region["h"]) * 900)
+    }
+  })
+  return json
+}
+
 const imagesList = [
   {
-    src: screen,
-    name: "Image 1",
-    regions: regionsList
+    src: counterstrikeImg,
+    name: "Counterstrike",
+    regions: parseTemplate(csgoTemplate)
   }
 ]
 
 const onExit = (obj) => {
   const images = obj.images.map(image => {
-    return image.regions;
+    return generateJson(image.regions);
   })
   console.log(JSON.stringify(images));
   return JSON.stringify(images)
@@ -67,7 +101,7 @@ const onExit = (obj) => {
 
 const App = () => (
   <ReactImageAnnotate
-    selectedImage={screen}
+    selectedImage={counterstrikeImg}
     taskDescription="# Tag coffees."
     enabledTools={["select", "create-box"]}
     images={imagesList}

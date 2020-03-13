@@ -1,0 +1,22 @@
+.icon-button {
+    background-color: rgba(248, 88, 88, 0.6);
+    color: rgb(255, 220, 220);
+    font-size: 12px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    border-radius: 50%;
+    // -webkit-box-shadow: 10px 10px 47px -21px rgba(248,87,87,0.98);
+    // -moz-box-shadow: 10px 10px 47px -21px rgba(248,87,87,0.98);
+    // box-shadow: 10px 10px 47px -21px rgba(248,87,87,0.98);
+    -webkit-box-shadow: 10px 10px 47px -21px rgba(120,44,44,1);
+    -moz-box-shadow: 10px 10px 47px -21px rgba(120,44,44,1);
+    box-shadow: 10px 10px 47px -21px rgba(120,44,44,1);
+    &:hover {
+        background-color: rgba(248, 88, 88, 1);
+    }
+
+}

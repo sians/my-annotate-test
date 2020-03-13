@@ -1,0 +1,471 @@
+[
+  {
+    "class_name": "target_location",
+    "start_x": 10,
+    "end_x": 80,
+    "start_y": 130,
+    "end_y": 150
+  },
+  {
+    "class_name": "left_score",
+    "start_x": 515,
+    "end_x": 555,
+    "start_y": 115,
+    "end_y": 155
+  },
+  {
+    "class_name": "left_acronym",
+    "start_x": 390,
+    "end_x": 505,
+    "start_y": 125,
+    "end_y": 150
+  },
+  {
+    "class_name": "right_score",
+    "start_x": 645,
+    "end_x": 685,
+    "start_y": 115,
+    "end_y": 155
+  },
+  {
+    "class_name": "right_acronym",
+    "start_x": 695,
+    "end_x": 810,
+    "start_y": 125,
+    "end_y": 150
+  },
+  {
+    "class_name": "timestamp",
+    "start_x": 570,
+    "end_x": 630,
+    "start_y": 115,
+    "end_y": 140
+  },
+  {
+    "class_name": "rounds",
+    "start_x": 555,
+    "end_x": 645,
+    "start_y": 140,
+    "end_y": 155
+  },
+  {
+    "class_name": "left_player_1",
+    "start_x": 65,
+    "end_x": 170,
+    "start_y": 450,
+    "end_y": 465
+  },
+  {
+    "class_name": "left_player_2",
+    "start_x": 65,
+    "end_x": 170,
+    "start_y": 490,
+    "end_y": 505
+  },
+  {
+    "class_name": "left_player_3",
+    "start_x": 65,
+    "end_x": 170,
+    "start_y": 530,
+    "end_y": 545
+  },
+  {
+    "class_name": "left_player_4",
+    "start_x": 65,
+    "end_x": 170,
+    "start_y": 567,
+    "end_y": 582
+  },
+  {
+    "class_name": "left_player_5",
+    "start_x": 65,
+    "end_x": 170,
+    "start_y": 605,
+    "end_y": 620
+  },
+  {
+    "class_name": "right_player_1",
+    "start_x": 1030,
+    "end_x": 1135,
+    "start_y": 450,
+    "end_y": 465
+  },
+  {
+    "class_name": "right_player_2",
+    "start_x": 1030,
+    "end_x": 1135,
+    "start_y": 490,
+    "end_y": 505
+  },
+  {
+    "class_name": "right_player_3",
+    "start_x": 1030,
+    "end_x": 1135,
+    "start_y": 530,
+    "end_y": 545
+  },
+  {
+    "class_name": "right_player_4",
+    "start_x": 1030,
+    "end_x": 1135,
+    "start_y": 567,
+    "end_y": 582
+  },
+  {
+    "class_name": "right_player_5",
+    "start_x": 1030,
+    "end_x": 1135,
+    "start_y": 605,
+    "end_y": 620
+  },
+  {
+    "class_name": "left_player_1_hp",
+    "start_x": 40,
+    "end_x": 65,
+    "start_y": 450,
+    "end_y": 465
+  },
+  {
+    "class_name": "left_player_2_hp",
+    "start_x": 40,
+    "end_x": 65,
+    "start_y": 490,
+    "end_y": 505
+  },
+  {
+    "class_name": "left_player_3_hp",
+    "start_x": 40,
+    "end_x": 65,
+    "start_y": 530,
+    "end_y": 545
+  },
+  {
+    "class_name": "left_player_4_hp",
+    "start_x": 40,
+    "end_x": 65,
+    "start_y": 567,
+    "end_y": 582
+  },
+  {
+    "class_name": "left_player_5_hp",
+    "start_x": 40,
+    "end_x": 65,
+    "start_y": 605,
+    "end_y": 620
+  },
+  {
+    "class_name": "right_player_1_hp",
+    "start_x": 1135,
+    "end_x": 1160,
+    "start_y": 450,
+    "end_y": 465
+  },
+  {
+    "class_name": "right_player_2_hp",
+    "start_x": 1135,
+    "end_x": 1160,
+    "start_y": 490,
+    "end_y": 505
+  },
+  {
+    "class_name": "right_player_3_hp",
+    "start_x": 1135,
+    "end_x": 1160,
+    "start_y": 530,
+    "end_y": 545
+  },
+  {
+    "class_name": "right_player_4_hp",
+    "start_x": 1135,
+    "end_x": 1160,
+    "start_y": 567,
+    "end_y": 582
+  },
+  {
+    "class_name": "right_player_5_hp",
+    "start_x": 1135,
+    "end_x": 1160,
+    "start_y": 605,
+    "end_y": 620
+  },
+  {
+    "class_name": "left_player_1_money",
+    "start_x": 65,
+    "end_x": 100,
+    "start_y": 465,
+    "end_y": 485
+  },
+  {
+    "class_name": "left_player_2_money",
+    "start_x": 65,
+    "end_x": 100,
+    "start_y": 505,
+    "end_y": 525
+  },
+  {
+    "class_name": "left_player_3_money",
+    "start_x": 65,
+    "end_x": 100,
+    "start_y": 545,
+    "end_y": 565
+  },
+  {
+    "class_name": "left_player_4_money",
+    "start_x": 65,
+    "end_x": 100,
+    "start_y": 582,
+    "end_y": 602
+  },
+  {
+    "class_name": "left_player_5_money",
+    "start_x": 65,
+    "end_x": 100,
+    "start_y": 620,
+    "end_y": 640
+  },
+  {
+    "class_name": "right_player_1_money",
+    "start_x": 1100,
+    "end_x": 1135,
+    "start_y": 465,
+    "end_y": 485
+  },
+  {
+    "class_name": "right_player_2_money",
+    "start_x": 1100,
+    "end_x": 1135,
+    "start_y": 505,
+    "end_y": 525
+  },
+  {
+    "class_name": "right_player_3_money",
+    "start_x": 1100,
+    "end_x": 1135,
+    "start_y": 545,
+    "end_y": 565
+  },
+  {
+    "class_name": "right_player_4_money",
+    "start_x": 1100,
+    "end_x": 1135,
+    "start_y": 582,
+    "end_y": 602
+  },
+  {
+    "class_name": "right_player_5_money",
+    "start_x": 1100,
+    "end_x": 1135,
+    "start_y": 620,
+    "end_y": 640
+  },
+  {
+    "class_name": "left_player_1_kills",
+    "start_x": 360,
+    "end_x": 380,
+    "start_y": 464,
+    "end_y": 482
+  },
+  {
+    "class_name": "left_player_1_assists",
+    "start_x": 387,
+    "end_x": 407,
+    "start_y": 464,
+    "end_y": 482
+  },
+  {
+    "class_name": "left_player_1_deaths",
+    "start_x": 413,
+    "end_x": 433,
+    "start_y": 464,
+    "end_y": 482
+  },
+  {
+    "class_name": "left_player_2_kills",
+    "start_x": 360,
+    "end_x": 380,
+    "start_y": 503,
+    "end_y": 521
+  },
+  {
+    "class_name": "left_player_2_assists",
+    "start_x": 387,
+    "end_x": 407,
+    "start_y": 503,
+    "end_y": 521
+  },
+  {
+    "class_name": "left_player_2_deaths",
+    "start_x": 413,
+    "end_x": 433,
+    "start_y": 503,
+    "end_y": 521
+  },
+  {
+    "class_name": "left_player_3_kills",
+    "start_x": 360,
+    "end_x": 380,
+    "start_y": 542,
+    "end_y": 561
+  },
+  {
+    "class_name": "left_player_3_assists",
+    "start_x": 387,
+    "end_x": 407,
+    "start_y": 542,
+    "end_y": 561
+  },
+  {
+    "class_name": "left_player_3_deaths",
+    "start_x": 413,
+    "end_x": 433,
+    "start_y": 542,
+    "end_y": 561
+  },
+  {
+    "class_name": "left_player_4_kills",
+    "start_x": 360,
+    "end_x": 380,
+    "start_y": 580,
+    "end_y": 599
+  },
+  {
+    "class_name": "left_player_4_assists",
+    "start_x": 387,
+    "end_x": 407,
+    "start_y": 580,
+    "end_y": 599
+  },
+  {
+    "class_name": "left_player_4_deaths",
+    "start_x": 413,
+    "end_x": 433,
+    "start_y": 580,
+    "end_y": 599
+  },
+  {
+    "class_name": "left_player_5_kills",
+    "start_x": 360,
+    "end_x": 380,
+    "start_y": 618,
+    "end_y": 637
+  },
+  {
+    "class_name": "left_player_5_assists",
+    "start_x": 387,
+    "end_x": 407,
+    "start_y": 618,
+    "end_y": 637
+  },
+  {
+    "class_name": "left_player_5_deaths",
+    "start_x": 413,
+    "end_x": 433,
+    "start_y": 618,
+    "end_y": 637
+  },
+  {
+    "class_name": "right_player_1_kills",
+    "start_x": 765,
+    "end_x": 785,
+    "start_y": 464,
+    "end_y": 482
+  },
+  {
+    "class_name": "right_player_1_assists",
+    "start_x": 792,
+    "end_x": 812,
+    "start_y": 464,
+    "end_y": 482
+  },
+  {
+    "class_name": "right_player_1_deaths",
+    "start_x": 818,
+    "end_x": 838,
+    "start_y": 464,
+    "end_y": 482
+  },
+  {
+    "class_name": "right_player_2_kills",
+    "start_x": 765,
+    "end_x": 785,
+    "start_y": 503,
+    "end_y": 521
+  },
+  {
+    "class_name": "right_player_2_assists",
+    "start_x": 792,
+    "end_x": 812,
+    "start_y": 503,
+    "end_y": 521
+  },
+  {
+    "class_name": "right_player_2_deaths",
+    "start_x": 818,
+    "end_x": 838,
+    "start_y": 503,
+    "end_y": 521
+  },
+  {
+    "class_name": "right_player_3_kills",
+    "start_x": 765,
+    "end_x": 785,
+    "start_y": 542,
+    "end_y": 561
+  },
+  {
+    "class_name": "right_player_3_assists",
+    "start_x": 792,
+    "end_x": 812,
+    "start_y": 542,
+    "end_y": 561
+  },
+  {
+    "class_name": "right_player_3_deaths",
+    "start_x": 818,
+    "end_x": 838,
+    "start_y": 542,
+    "end_y": 561
+  },
+  {
+    "class_name": "right_player_4_kills",
+    "start_x": 765,
+    "end_x": 785,
+    "start_y": 580,
+    "end_y": 599
+  },
+  {
+    "class_name": "right_player_4_assists",
+    "start_x": 792,
+    "end_x": 812,
+    "start_y": 580,
+    "end_y": 599
+  },
+  {
+    "class_name": "right_player_4_deaths",
+    "start_x": 818,
+    "end_x": 838,
+    "start_y": 580,
+    "end_y": 599
+  },
+  {
+    "class_name": "right_player_5_kills",
+    "start_x": 765,
+    "end_x": 785,
+    "start_y": 618,
+    "end_y": 637
+  },
+  {
+    "class_name": "right_player_5_assists",
+    "start_x": 792,
+    "end_x": 812,
+    "start_y": 618,
+    "end_y": 637
+  },
+  {
+    "class_name": "right_player_5_deaths",
+    "start_x": 818,
+    "end_x": 838,
+    "start_y": 618,
+    "end_y": 637
+  }
+]

@@ -1,13 +1,10 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArchive, faTrashAlt, faCheckCircle, faTimesCircle } from '@fortawesome/free-solid-svg-icons'
+import IconButton from '../IconButton/IconButton'
+import { faArchive, faTrashAlt, faCheck, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 export default function Task({ task: { id, text, completed, selectedTask }, onUpdateTask, onDeleteTask }) {
-    const trashIcon = <FontAwesomeIcon className="icon" icon={faTrashAlt}/>
-    const checkIcon = <FontAwesomeIcon className="icon" icon={faCheckCircle}/>
-    const uncheckIcon = <FontAwesomeIcon className="icon" icon={faTimesCircle}/>
 
     const [isHovering, setIsHovering] = useState(false);
     const handleMouseHover = () => { 
@@ -29,22 +26,16 @@ export default function Task({ task: { id, text, completed, selectedTask }, onUp
         <input type="text" value={text} readOnly={true} placeholder="Input title"/>
 
         { (isHovering || selected) &&
-            <div className="actions" onClick={event => event.stopPropagation()}>
+            <div className="action-buttons" onClick={event => event.stopPropagation()}>
                 {!completed && (
-                    <a onClick={() => onUpdateTask(id)}>
-                        {checkIcon}        
-                    </a>
+                    <IconButton type="check" faIcon={faCheck} action={() => onUpdateTask(id)}/>
                 )}
 
                 {completed && (
-                    <a onClick={() => onUpdateTask(id)}>
-                        {uncheckIcon}
-                    </a>
+                    <IconButton type="times" faIcon={faTimes} action={() => onUpdateTask(id)}/>
                 )}            
                 
-                <a onClick={() => onDeleteTask(id)}>
-                    {trashIcon}
-                </a>
+                <IconButton type="trash" faIcon={faTrashAlt} action={() => onDeleteTask(id)}/>
             </div>
         }
 
