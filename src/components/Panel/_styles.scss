@@ -1,4 +1,10 @@
 .panel {
     background-color: rgb(255, 220, 220);
+    height: 80vh;
+    color: rgb(248, 88, 88);
     width: 400px;
+    h5 {
+        padding: 20px;
+        font-size: 1.6rem;
+    }
 }

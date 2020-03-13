@@ -24,7 +24,7 @@ export const defaultTasksData = [
 //   { id: '6', title: 'Task 6 (pinned)', state: 'TASK_PINNED' },
 // ];
 
-export const Default = () => <Panel tasks={defaultTasksData} {...actionsData} />;
+export const Default = () => <Panel name="soon" tasks={defaultTasksData} {...actionsData} />;
 
 // export const WithPinnedTasks = () => <Panel tasks={withPinnedTasksData} {...actionsData} />;
 

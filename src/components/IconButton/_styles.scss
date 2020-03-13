@@ -9,12 +9,9 @@
     align-items: center;
     margin-left: 5px;
     border-radius: 50%;
-    // -webkit-box-shadow: 10px 10px 47px -21px rgba(248,87,87,0.98);
-    // -moz-box-shadow: 10px 10px 47px -21px rgba(248,87,87,0.98);
-    // box-shadow: 10px 10px 47px -21px rgba(248,87,87,0.98);
-    -webkit-box-shadow: 10px 10px 47px -21px rgba(120,44,44,1);
-    -moz-box-shadow: 10px 10px 47px -21px rgba(120,44,44,1);
-    box-shadow: 10px 10px 47px -21px rgba(120,44,44,1);
+    -webkit-box-shadow: 10px 10px 47px -21px rgba(128,24,24,1);
+    -moz-box-shadow: 10px 10px 47px -21px rgba(128,24,24,1);
+    box-shadow: 10px 10px 47px -21px rgba(128,24,24,1);
     &:hover {
         background-color: rgba(248, 88, 88, 1);
     }
